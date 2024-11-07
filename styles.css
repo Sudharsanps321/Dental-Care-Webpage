@@ -1,0 +1,108 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: space-between; /* Space between h1 and nav */
+    align-items: center; /* Center vertically */
+    background-color: #0096d1;
+    color: white;
+    padding: 1rem;
+}
+
+/* Header title styling */
+header h1 {
+    margin: 0; /* Remove bottom margin */
+}
+
+/* Navigation bar styling */
+nav ul {
+    list-style: none;
+    display: flex; /* Display items in a row */
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li:hover {
+    background-color: #f4f4f9;
+    color: black;
+}
+
+/* Main content styling */
+main {
+    padding: 2rem;
+}
+
+main section {
+    margin-bottom: 2rem;
+}
+
+/* Section titles */
+main h2 {
+    color: #0096d1;
+    margin-bottom: 0.5rem;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-top: 1rem;
+}
+
+form label {
+    margin-top: 0.5rem;
+}
+
+form input, form textarea, form button {
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+form button {
+    margin-top: 1rem;
+    background-color: #0096d1;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #007bb5;
+}
+
+/* Footer styling */
+footer {
+    background-color: #0096d1;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
